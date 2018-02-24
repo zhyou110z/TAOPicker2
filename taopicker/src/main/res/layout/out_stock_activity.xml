@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_color"
+              android:orientation="vertical">
+
+    <com.rt.taopicker.widget.HeadTitleWidget
+        android:id="@+id/wdg_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.rt.core.widget.ptr.PullToRefreshScrollView
+        android:id="@+id/pull_to_refresh_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_outstock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            <include
+                android:id="@+id/ll_out_stock_nodata"
+                layout="@layout/base_item_tooltip_blank"
+                />
+        </LinearLayout>
+    </com.rt.core.widget.ptr.PullToRefreshScrollView>
+</LinearLayout>

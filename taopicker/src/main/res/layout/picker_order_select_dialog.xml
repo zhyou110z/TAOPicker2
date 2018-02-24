@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="请选择刷入商品是哪张订单"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="15dp"
+        style="@style/DivideLineStyle">
+        <TextView
+            android:id="@+id/tv_good_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:paddingBottom="30dp"
+        style="@style/DivideLineStyle">
+
+        <TextView
+            android:id="@+id/tv_bar_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/DivideLineStyle">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="订单号"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/tv_need_label"
+            android:layout_marginRight="22dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="客人要规格"/>
+
+        <TextView
+            android:id="@+id/tv_need_label"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="需求"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:listSelector="@android:color/transparent"
+        android:background="@color/white"
+        android:divider="#00000000"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        style="@style/DivideLineStyle"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/tv_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/medium_grey"
+            android:text="取消"/>
+        <TextView
+            android:id="@+id/tv_btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            style="@style/LeftDivideLineStyle"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="确定"/>
+    </LinearLayout>
+
+</LinearLayout>

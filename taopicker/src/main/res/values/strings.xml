@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">优鲜作业</string>
+    <string name="network_exception">断网了~T_T~请检查网络连接后再试</string>
+    <string name="server_exception">服务异常</string>
+
+    <string name="full_load_complete">全部加载完成</string>
+
+    <string name="pull_load_complete">没有更多了</string>
+    <string name="pull_bottom_pull_label">上拉更多</string>
+    <string name="pull_bottom_release_label">松开加载</string>
+    <string name="pull_bottom_refreshing_label">正在加载…</string>
+
+    <item type="id" name="tag_menu_code"/>
+    <item type="id" name="tag_menu_name"/>
+    <item type="id" name="tag_area_name"/>
+    <item type="id" name="tag_area_code"/>
+    <item type="id" name="tag_store_name"/>
+    <item type="id" name="tag_store_code"/>
+
+
+
+
+
+</resources>

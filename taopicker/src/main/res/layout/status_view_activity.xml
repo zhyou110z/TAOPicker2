@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_color"
+              android:orientation="vertical">
+
+    <com.rt.taopicker.widget.HeadTitleWidget
+        android:id="@+id/wdg_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/base_user_info"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <LinearLayout
+                style="@style/BaseLineLayout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    style="@style/BaseLineTextView"
+                    android:text="载具/物流箱/道口"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:id="@+id/edt_bar_code"
+                    style="@style/BaseLineEditText"
+                    android:hint="请刷入载具/物流箱/道口"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/CornerButtonDisabled"
+            android:text="确定"/>
+
+    </LinearLayout>
+
+</LinearLayout>

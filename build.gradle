@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        //realm
+        classpath "io.realm:realm-gradle-plugin:3.5.0"
+        //lambda语法
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+    /**
+     * 全局Gradle配置，可在模块中引用
+     */
+    project.ext {
+        // 编译用的SDK版本
+        compileSdkVersion = 26
+        // 构建工具版本
+        buildToolsVersion = '26.0.1'
+        // 最低支持的SDK版本
+        minSdkVersion = 15
+        // 目标SDK版本
+        targetSdkVersion = 26
+
+        // AppCompat v7兼容包
+        support_appcompat_v7 = 'com.android.support:appcompat-v7:26.+'
+        // RecyclerView兼容包
+        support_recyclerview_v7 = 'com.android.support:recyclerview-v7:26.+'
+        // Support V4兼容包
+        support_support_v4 = 'com.android.support:support-v4:26.+'
+        // Material Design兼容包
+        support_design = 'com.android.support:design:26.+'
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#d7063b</color>
+    <color name="logo_color">#d6005b</color>
+    <color name="black">#000000</color>
+    <color name="Dark_grey">#333333</color>
+    <color name="medium_grey">#666666</color>
+    <color name="Light_grey">#999999</color>
+    <color name="line">#d5d5d5</color>
+    <color name="background_color">#f2f2f2</color>
+    <color name="navigation">#f8f8f8</color>
+    <color name="deep_red">#c70034</color>
+    <color name="label">#e60012</color>
+    <color name="h_pink">#ff6162</color>
+    <color name="orange">#ff9600</color>
+    <color name="cyanoze">#6950a1</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#007aff</color>
+    <color name="light_yellow">#fdeccb</color>
+    <color name="module_line">#E5E5E5</color>
+    <color name="pink">#ffefef</color>
+    <color name="yellow">#ffba25</color>
+    <color name="transparent">#00000000</color>
+
+
+
+    <color name="rowSelect">#ffeaef</color>
+</resources>

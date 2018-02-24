@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_color">
+
+    <com.rt.taopicker.widget.HeadTitleWidget
+        android:id="@+id/wdg_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="员工信息："
+                android:textColor="@color/medium_grey"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_user_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                style="@style/BaseLineLayout">
+
+                <TextView
+                    style="@style/BaseLineTextView1"
+                    android:text="载具" />
+
+                <EditText
+                    android:id="@+id/edt_vehicle"
+                    style="@style/BaseLineEditText1"
+                    android:hint="请刷入拣货载具"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                style="@style/BaseLineLayout">
+
+                <TextView
+                    style="@style/BaseLineTextView1"
+                    android:text="暂存箱" />
+
+                <EditText
+                    android:id="@+id/edt_temp_storage_box"
+                    style="@style/BaseLineEditText1"
+                    android:hint="请刷入暂存箱号"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

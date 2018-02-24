@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp"
+        android:background="@color/background_color">
+
+        <TextView
+            android:id="@+id/tv_bind_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/medium_grey"
+            android:text="绑定状态："/>
+
+        <TextView
+            android:id="@+id/tv_box_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_bind_label"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="已绑定"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_status_label"
+            android:textSize="14dp"
+            android:textColor="@color/medium_grey"
+            android:text="物流箱状态："/>
+
+        <TextView
+            android:id="@+id/tv_status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="待骑手领取"/>
+
+        <TextView
+            android:id="@+id/tv_operator_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_bind_label"
+            android:layout_marginTop="12dp"
+            android:textSize="14dp"
+            android:textColor="@color/medium_grey"
+            android:text="包装员："/>
+
+        <TextView
+            android:id="@+id/tv_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_operator_label"
+            android:layout_alignBaseline="@+id/tv_operator_label"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="张三"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_operate_time_label"
+            android:layout_alignBaseline="@+id/tv_operator_label"
+            android:textSize="14dp"
+            android:textColor="@color/medium_grey"
+            android:text="包装时间："/>
+
+        <TextView
+            android:id="@+id/tv_operate_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/tv_operator_label"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="2017/06/27 09:45:12"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/medium_grey"
+            android:text="其他物流箱："/>
+
+        <LinearLayout
+            android:id="@+id/ll_boxs_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="1007WLX000037"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="1007WLX000037"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/medium_grey"
+            android:text="道口号："/>
+
+        <TextView
+            android:id="@+id/tv_stall_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="1002D001"/>
+    </LinearLayout>
+
+
+</LinearLayout>

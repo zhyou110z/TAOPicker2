@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <com.rt.taopicker.widget.HeadTitleWidget
+        android:id="@+id/wdg_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/BaseLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                style="@style/BaseLineTextView"
+                android:textSize="20dp"
+                android:text="批次号"/>
+
+            <EditText
+                android:id="@+id/edt_wave_order_no"
+                style="@style/BaseLineEditText"
+                android:hint="请刷入批次号"
+                android:textSize="20dp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_printer_test"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@color/main_color"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="打印"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

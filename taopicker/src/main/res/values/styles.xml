@@ -1,0 +1,107 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+
+    <!--加载中样式-->
+    <style name="LoadingDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--圆角按钮-->
+    <style name="CornerButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginTop">27dp</item>
+        <item name="android:background">@drawable/abc_button_corner_normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!--圆角按钮不可点击-->
+    <style name="CornerButtonDisabled" parent="CornerButton">
+        <item name="android:background">@drawable/abc_button_corner_disabled</item>
+    </style>
+
+    <!--底部分割线样式-->
+    <style name="DivideLineStyle">
+        <item name="android:background">@drawable/abc_divide_edit</item>
+    </style>
+
+    <!--顶部分割线样式-->
+    <style name="TopDivideLineStyle">
+        <item name="android:background">@drawable/abc_top_divide_edit</item>
+    </style>
+
+    <!--左边分割线样式-->
+    <style name="LeftDivideLineStyle">
+        <item name="android:background">@drawable/abc_divide_left</item>
+    </style>
+
+    <!--基础线性布局-->
+    <style name="BaseLineLayout">
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:background">@drawable/abc_input_corner_default</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--基础线性标题栏-->
+    <style name="BaseLineTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <!--基础线性编辑框-->
+    <style name="BaseLineEditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColorHint">@color/Light_grey</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="CornerStyle">
+        <item name="android:background">@drawable/abc_white_corner</item>
+    </style>
+
+
+    <style name="BaseLineEditText1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColorHint">@color/Light_grey</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="BaseLineTextView1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:lines">1</item>
+    </style>
+
+</resources>

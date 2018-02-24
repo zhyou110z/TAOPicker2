@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'me.tatarka.retrolambda'
+
+retrolambda {
+    javaVersion JavaVersion.VERSION_1_6
+}
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.rt.taopicker"
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java']
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        develop {
+            versionCode 24
+            versionName "1.0.0.24"
+            applicationId "com.rt.taopicker.develop"
+            manifestPlaceholders = [
+                //蒲公英配置
+                PGYER_APP_ID    : "0d2b4cfc6f57c1225398f136dd53b17f",
+            ]
+            resValue("string", "version", "develop")
+        }
+
+        publish {
+            versionCode 1
+            versionName "1.0.0"
+            applicationId "com.rt.taopicker"
+            manifestPlaceholders = [
+                //蒲公英配置
+                PGYER_APP_ID    : "60343fcdba36f2245b8d0344b4248208",
+            ]
+            resValue("string", "version", "publish")
+        }
+    }
+
+    //lambda 配置
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':lib-core')
+    //添加依赖
+    // appcompatv7兼容包
+    compile project.ext.support_appcompat_v7
+    compile project.ext.support_support_v4
+    compile project.ext.support_recyclerview_v7
+    compile project.ext.support_design
+    // Retrofit库
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    //rxjava
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    //gson
+    compile 'com.google.code.gson:gson:2.6.2'
+    //okhttp
+    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    //zxing
+    compile 'com.google.zxing:core:3.3.0'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //glide
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    //流式布局
+    compile 'com.fynn.fluidlayout:fluidlayout:1.0'
+    testCompile 'junit:junit:4.12'
+    //switchbutton
+    compile 'com.kyleduo.switchbutton:library:2.0.0'
+    //事件通知中心
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //Luban（鲁班） —— Android图片压缩工具，仿微信朋友圈压缩策略。
+    compile 'top.zibin:Luban:1.1.1'
+}

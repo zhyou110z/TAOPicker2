@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:paddingTop="7.5dp"
+              android:paddingBottom="7.5dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:text="21332233"/>
+
+    <TextView
+        android:id="@+id/tv_connect_btn"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:background="@drawable/abc_button_corner"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="连接"
+        android:visibility="gone"/>
+
+</LinearLayout>

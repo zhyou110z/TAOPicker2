@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project.ext.support_appcompat_v7
+    compile project.ext.support_recyclerview_v7
+//    // Retrofit库
+//    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+//    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+//    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+//    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+//    //rxjava
+//    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+//    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    //gson
+    compile 'com.google.code.gson:gson:2.6.2'
+//    //okhttp
+//    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+//    //realm
+//    compile "io.realm:realm-gradle-plugin:3.7.2"
+}
